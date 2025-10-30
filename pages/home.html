@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Selector de nivel</title>
+  </head>
+  <body>
+    <main class="main_container">
+      <section class="home_section">
+        <h1 class="home_title">✿ Empareja cartas ✦</h1>
+        <div class="description">
+          <p>
+            Prueba la habilidad de tu memoria para emparejar cartas que tengan
+            el mismo número, cuanta mayor dificultad elijas, más cartas habrá
+            que emparejar. ¡Cuidado con el tiempo!
+          </p>
+        </div>
+        <div class="buttons_container">
+          <button class="botones" id="facilbtn" onclick="abrirJuego('facil')">
+            Fácil ➔
+          </button>
+          <button class="botones" id="mediobtn" onclick="abrirJuego('medio')">
+            Medio ➔
+          </button>
+          <button
+            class="botones"
+            id="avanzadobtn"
+            onclick="abrirJuego('avanzado')"
+          >
+            Avanzado ➔
+          </button>
+        </div>
+        <button id="logoutBtn">Cerrar sesión</button>
+      </section>
+    </main>
+  </body>
+  <script src="../js/jquery_3.7.1.js"></script>
+  <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/juego.js"></script>
+</html>

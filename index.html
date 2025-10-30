@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main class="main_container">
+      <section class="login_container">
+        <h1 class="login_title">Iniciar Sesión</h1>
+        <form class="login_form" id="loginForm">
+          <div class="form_group">
+            <label class="form_label" for="usuario">Usuario:</label>
+            <input
+              class="form_input"
+              type="text"
+              id="usuario"
+              name="usuario"
+              required
+            />
+          </div>
+          <div class="form_group">
+            <label class="form_label" for="contrasenia">Contraseña:</label>
+            <input
+              class="form_input"
+              type="password"
+              id="contrasenia"
+              name="contrasenia"
+              required
+            />
+          </div>
+          <button type="submit" id="submit_login_btn" class="login_button">
+            Entrar
+          </button>
+        </form>
+      </section>
+    </main>
+  </body>
+  <script src="js/jquery_3.7.1.js"></script>
+  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/login.js"></script>
+</html>
